@@ -1,0 +1,26 @@
+body {
+    background-color: DodgerBlue;
+    background-image: url("img.jpg");
+    
+    
+  }
+  
+  h2 {
+    color: rgb(255, 99, 71);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 40px;
+    background-color: yellow;
+    margin-left: 50px;
+  }
+  div{
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+    background-color: lightblue;
+  }
