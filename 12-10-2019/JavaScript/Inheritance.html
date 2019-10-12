@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+class Phone
+{
+  constructor()
+  {
+    this.company="Nokia";
+  }
+}
+
+class Smartphone extends Phone {
+  constructor(name,price) {
+   super();
+    this.name=name;
+    this.price=price;
+  } 
+}
+
+var s = new Smartphone("Samsung","70000");
+document.writeln(s.company+" "+s.name+" "+s.price);
+</script>
+
+</body>
+</html>
+ 

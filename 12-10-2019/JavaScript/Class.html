@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        class Student
+        {
+            constructor(id,name)
+            {
+                this.id=id;
+                this.name=name;
+            }
+            detail() //Declaring method
+            {
+                document.writeln(this.id+" "+this.name+"<br>")
+            }
+        }
+        var s1=new Employee(420,"Bishnu");   //passing obj to a variable
+        var s2=new Employee(102,"Gyana");
+        s1.detail();  //calling method
+        s2.detail();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function Person(age) {
+    this.age=age;
+    this.getInfo=function() {
+      return "I am " + this.age + " years old " ;
+        
+    }
+  }
+  function Employee(age,salary){
+    this.salary=salary;
+    this.age=age;
+    this.getInfo=function() {
+      return "I am " + this.age + " years old " +
+        "and earns " + this.salary + " dollar.";
+    }
+  }
+  Employee.prototype= new Person();
+  Employee.prototype.constructor=Employee;
+
+  function showInfo(obj) {
+    document.write(obj.getInfo()+"<br>");
+  }
+
+  var person = new Person(25);
+  var employee = new Employee(55,80);
+  showInfo(person);
+  showInfo(employee);
+
+</script>
+</body>
+</html>

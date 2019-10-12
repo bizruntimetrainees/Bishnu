@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+class Product
+  {
+    constructor()
+    {
+       var name;
+       var price;
+    }
+        getName()
+        {
+          return this.name;
+        }
+      setName(name)
+      {
+        this.name=name;
+      }
+      
+      getPrice()
+      {
+        return this.price;
+      }
+    setPrice(price)
+    {
+       
+          this.price=price;
+        }
+    }
+    
+    var prod=new Product();
+     prod.setName("SAMSUNG");
+     prod.setPrice(11000);//alert() invokes
+     document.writeln(prod.getName()+" "+prod.getPrice());
+</script>
+
+</body>
+</html>
+
+ 
