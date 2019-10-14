@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+        <link rel="stylesheet" href="Slide.css">
+<head>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+  
+ // $("#flip").click(function(){
+  //  $("#panel").slideUp("slow");
+ // });
+ $("#flip").click(function(){
+  $("#panel").slideToggle();
+});
+  
+});
+</script>
+
+</head>
+<body>
+<div>
+<h2>Hello World</h2>
+<p>jQuery selectors allow you to select and manipulate HTML element(s).</p>
+<p id="panel">The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast",
+             or milliseconds.
+             The optional callback parameter is a function to be executed after the sliding completes.</p>
+   </div>
+        <button id="stop">Stop sliding</button>
+             <div id="flip">Click me</div>
+            
+</body>
+</html>
