@@ -1,0 +1,12 @@
+h1 {
+    color: green;
+  }
+  
+  p {
+    color: red;
+  }
+  #container {
+    width: 680px;
+    border: 1px blue double;
+  }
+  
