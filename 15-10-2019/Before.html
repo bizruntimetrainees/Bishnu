@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('#div1').before('<div style="background-color:yellow"> New div </div>');
+        $('p') .append('Runtime');
+    });
+
+</script>
+<style>
+div{
+    border: 2px solid;
+    background-color: aqua;
+    margin:3px 0 3px 0;
+}
+</style>
+</head>
+<body>
+    <h1>LONG NOTE BOOK</h1>
+    <p>Biz</p>
+    <div id="div1">div 1</div>
+    <div id="div2">div 2</div>
+</body>
+</html>

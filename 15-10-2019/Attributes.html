@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#btnDivStyle').click(function(){
+        
+            alert($('div').attr('class'));
+        });
+        $('#btnPStyle').click(function(){
+				alert($('p').attr('style'));
+			});
+            $('#btnPStyle').click(function(){
+                var style=$('p').prop('style');
+                alter(style.fontWeight);
+            });
+
+            $('div').attr('class','yellowDiv'); });</script>
+            <style>
+            .yellowDiv{
+                background-color: rgb(208, 226, 43);}
+                </style>
+    </head>
+<body>
+    <h1>Jquery</h1>
+    <button id="btnDivStyle">Get div class</button>
+    <button id="btnPStyle">Get p Style</button></br></br>
+    <div>
+        Collection
+        </div>
+        <p style="font-size:16px;font-weight:bold">
+                First of all, specify a selector to get the reference of an element(s)
+        </p>
+        <div>
+            javascript
+        </div>
+        <p style="color:rgb(112, 10, 99)">
+                First of all, specify a selector to get the reference of an element(s)
+        </p>
+</body>
+</html>
