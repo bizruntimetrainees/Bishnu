@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+            
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+	<script>
+        $(document).ready(function () {
+			
+		 $('#ajaxBtn').click(function(){
+			
+			$.post("http://127.0.0.1:8887/Demo.txt",  
+			   { myData: 'This is my data.' }, 
+			   function(data, status, jqXHR) {
+						$('p').append('status: ' + status + ', data: ' + data);
+				});
+			});
+    });
+    </script>
+</head>
+<body>
+	<h1> Welcome to My page </h1>
+	
+	<input type="button" id="ajaxBtn" value="Send POST request" />
+	<p>
+	</p>
+</body>
+</html>
