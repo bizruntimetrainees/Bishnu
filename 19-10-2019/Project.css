@@ -1,0 +1,13 @@
+.menu
+{
+background-color: rgb(8, 8, 26);
+width: 462px;
+height: 55px;
+line-height: 20px;
+
+}
+button{
+    padding:15px 35px;
+    line-height: 20px;
+    background: rgb(42, 165, 73);
+}
