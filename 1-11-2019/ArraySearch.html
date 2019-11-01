@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <h2>Array Search</h2>
+   <script>
+   var array = [{one: 1}, {one: 10}];
+   console.log(d3.scan(array, function ascending(a, b) {
+   return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
+
+}))
+console.log(d3.scan(array,function descending(a, b) {
+  return b < a ? -1 : b > a ? 1 : b >= a ? 0 : NaN;
+}))
+   </script>
+   </body>
+   </html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <h2>Array Statistics</h2>
+        <script>
+        var value=[5,17,35,65,87,90,100]
+        console.log(" min"+d3.min(value));
+        console.log("max"+d3.max(value));
+        console.log("extent"+d3.extent(value));
+        console.log("sum"+d3.sum(value));
+        console.log("mean"+d3.mean(value));
+        console.log("quantile"+d3.quantile(value,0.5));
+        console.log("variance"+d3.variance(value));
+        console.log("deviation"+d3.deviation(value));
+        </script>
+    </body>
+</html>
